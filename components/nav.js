@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 export default function Nav(props) {
-  const { session, setProfileClicked, profileClicked } = props;
+  const { session, setProfileClicked, profileClicked, signOut } = props;
   // const { myProfileClicked, setMyProfileClicked } = useState(false);
   return (
     <>

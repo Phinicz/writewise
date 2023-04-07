@@ -38,8 +38,7 @@ export default function Home() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization:
-          "Bearer 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",
+        Authorization: process.env.OPENAIAPIKEY,
       },
       body: JSON.stringify({
         model: "text-davinci-003",
@@ -67,8 +66,7 @@ export default function Home() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization:
-          "Bearer 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",
+        Authorization: process.env.OPENAIAPIKEY,
       },
       body: JSON.stringify({
         model: "text-davinci-003",
@@ -95,8 +93,7 @@ export default function Home() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization:
-          "Bearer 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",
+        Authorization: process.env.OPENAIAPIKEY,
       },
       body: JSON.stringify({
         model: "image-alpha-001",
@@ -136,6 +133,7 @@ export default function Home() {
               session={session}
               setProfileClicked={setProfileClicked}
               profileClicked={profileClicked}
+              signOut={signOut}
             />
             <MarketingCopy
               session={session}
